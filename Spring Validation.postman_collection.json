@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Spring Validation",
+		"_postman_id": "94576f18-2c24-2743-7d86-7efc3be3a324",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "validation manual",
+			"request": {
+				"url": "localhost:8080/companies",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":1,\n\t\"name\": \"Ado\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "validacion rest",
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 1,\n\t\"username\": \"Adolfo\",\n\t\"phone\": \"12121212121\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Validator Level Class",
+			"request": {
+				"url": "localhost:8080/users/level",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"amich05@gmail.com\",\n\t\"verifyEmail\":\"amich@gmail.com\",\n\t\"password\":\"123\",\n\t\"verifyPassword\": \"333\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
